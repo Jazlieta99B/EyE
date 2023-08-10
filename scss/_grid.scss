@@ -1,0 +1,84 @@
+/*GRID pág inicio*/
+.contenedorInicio {
+    display: grid;
+    grid-template-areas: "body body body" "header form form" "pie pie pie";
+}
+
+.headerInicio {
+    grid-area: header;
+    border: none;
+    padding: 0px;
+}
+
+.mainInicio {
+    grid-area: body;
+    background-color: rgb(2, 151, 184);
+    min-height: 6rem;
+}
+
+.formInicio {
+    grid-area: form;
+}
+
+.pieInicio {
+    grid-area: pie;
+}
+
+.head {
+    color: white;
+    margin-top: 2%;
+}
+
+.logo {
+    padding-left: 10%;
+    height: 6rem;
+    width: 8rem;
+}
+
+/*GRID pág flota*/
+.contenedorF {
+    display: grid;
+    grid-template-areas: "mainF mainF mainF" "headerF cuerpoF cuerpoF" "pieF pieF pieF"
+}
+
+.mainF {
+    grid-area: mainF;
+    background-color: rgb(2, 151, 184);
+    min-height: 6rem;
+}
+
+.headerF {
+    grid-area: headerF;
+}
+
+.cuerpoF {
+    grid-area: cuerpoF;
+}
+
+.pieF {
+    grid-area: pieF;
+}
+
+/*GRID pág historia*/
+.contenedorH {
+    display: grid;
+    grid-template-areas: "mainH mainH mainH" "headerH cuerpoH cuerpoH" "pieH pieH pieH"
+}
+
+.mainH {
+    grid-area: mainH;
+    background-color: rgb(2, 151, 184);
+    min-height: 6rem;
+}
+
+.headerH {
+    grid-area: headerH;
+}
+
+.cuerpoH {
+    grid-area: cuerpoH;
+}
+
+.pieH {
+    grid-area: pieH;
+}
