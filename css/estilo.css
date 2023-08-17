@@ -123,6 +123,28 @@ footer {
   background-color: #40626d;
 }
 
+/*Versión tablet*/
+@media (min-width: 500px) and (max-width: 900px) {
+  .contenedor {
+    width: 80%;
+    margin: 1% 5%;
+  }
+  .contenedor .nombre,
+  .contenedor .apellido {
+    width: 80%;
+  }
+}
+/*Versión celu*/
+@media (max-width: 500px) {
+  .contenedor {
+    width: 90%;
+    margin: 1% 5%;
+  }
+  .contenedor .nombre,
+  .contenedor .apellido {
+    width: 80%;
+  }
+}
 .padre {
   display: grid;
   grid-template-areas: "titulo titulo" "intro fotoInicio" "pie pie";

@@ -2,7 +2,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         .formulario {
             background-color: rgb(211, 225, 229);
             border: 3px #598795 solid;
@@ -39,6 +39,32 @@
                 &:hover {
                     background-color: #40626d;
                 }
+            }
+        }
+    }
+
+    /*Versión tablet*/
+    @media (min-width:500px) and (max-width: 900px) {
+        .contenedor {
+            width: 80%;
+            margin: 1% 5%;
+
+            .nombre,
+            .apellido {
+                width: 80%
+            }
+        }
+    }
+
+    /*Versión celu*/
+    @media (max-width: 500px) {
+        .contenedor {
+            width: 90%;
+            margin: 1% 5%;
+
+            .nombre,
+            .apellido {
+                width: 80%
             }
         }
     }
