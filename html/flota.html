@@ -1,62 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../estilo.css">
     <title>E&E TRANSPORTES</title>
+    <!-- Boosrtap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800&family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- Icono de la página -->
+    <link rel="shortcut icon" href="../img/iconoE&E.png" type="image/x-icon">
+    <!-- Link animaciones -->
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="contenedorF">
-    <header class="headerF">
-        <img class="logo" src="../img/logoeye.jpg" alt="Foto del logo de la empresa">
-        <nav>
-            <ul class="navLink">
-                <li class="navegador"> <a href="../index.html">Inicio</a></li>
-                <li class="navegador"> <a href="historia.html">Nuestra historia</a></li>
-                <li class="navegador"> <a href="flota.html">Flota de camiones</a></li>
+<body>
+    <!-- header -->
+    <div class="container-fluid">
+        <header class=" color">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary color">
+                <div class="container-fluid color">
+                    <a class="navbar-brand bt" href="../index.html">
+                        <img class="logo" src="../img/logoeye.jpg" alt="Foto del logo de la empresa">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse color" id="navbarNav">
+                        <ul class="navbar-nav ul">
+                            <li class="nav-item li">
+                                <a class="nav-link e" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item li">
+                                <a class="nav-link e" href="historia.html">Nuestra historia</a>
+                            </li>
+                            <li class="nav-item li">
+                                <a class="nav-link e" href="flota.html">Nuestra flota</a>
+                            </li>
+                            <li class="nav-item li">
+                                <a class="nav-link e" href="form.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- cuerpo -->
+        <main class="wrapeer cuerpoF">
+            <h2 class="animacion">Nuestra flota de camiones</h2> <br>
 
-            </ul>
-        </nav>
-    </header>
+            <!-- Carrusel de imágenes del volcán -->
+            <section class="diaspositivas">
+                <div id="carouselExampleIndicators" class="carousel slide">
 
-    <main class="mainF">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
 
-        <h2 class="head">Nuestra flota de camiones</h2>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/camion.jpg" class="d-block w-100 img-fluid fotocamion" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/camion2.jpg" class="d-block w-100 img-fluid fotocamion" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/camion3.jpg" class="d-block w-100 img-fluid fotocamion" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/camion4.jpg" class="d-block w-100 img-fluid fotocamion" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/camion5.jpg" class="d-block w-100 img-fluid fotocamion" alt="">
+                        </div>
+                    </div>
 
-    </main>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+            </section>
+            <!-- pie info E&E -->
+            <section class="info">
+                <p> EUGENIO JANYISTABRO (SOCIO GERENTE) - EDUARDO RUBEN GONZALEZ (SOCIO) <br>
+                    0291-4941308 / 0291-4941267 CEL. 0291-4131080, EUGENIO JANYISTABRO.</p>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer>
+            <p> Página creada por Jazlieta, todos los derechos reservados </p>
+        </footer>
 
-    <div class="cuerpoF">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
-        <figure> <img src="../img/camion.jpg" alt="Foto de camión" class="fotocamion">
-            <figcaption>Nuestros camiones</figcaption>
-        </figure>
-
-        <figure> <img src="../img/camion2.jpg" alt="Foto de camión" class="fotocamion">
-            <figcaption>Nuestros camiones</figcaption>
-        </figure>
-
-        <figure> <img src="../img/camion3.jpg" alt="Foto de camión" class="fotocamion">
-            <figcaption>Nuestros camiones</figcaption>
-        </figure>
-
-        <figure> <img src="../img/camion4.jpg" alt="Foto de camión" class="fotocamion">
-            <figcaption>Nuestros camiones</figcaption>
-        </figure>
-
-        <figure> <img src="../img/camion5.jpg" alt="Foto de camión" class="fotocamion">
-            <figcaption>Nuestros camiones</figcaption>
-        </figure>
     </div>
-
-    <footer class="pieF">
-        E&E TRANSPORTES SRL
-        <br>
-        EUGENIO JANYISTABRO (SOCIO GERENTE) - EDUARDO RUBEN GONZALEZ (SOCIO) <br>
-        0291-4941308 / 0291-4941267 CEL. 0291-4131080, EUGENIO JANYISTABRO. <br>
-        TORNQUIST. PCIA. DE BUENOS AIRES
-    </footer>
 </body>
 
 </html>

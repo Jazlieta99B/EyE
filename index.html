@@ -1,53 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E&E TRANSPORTES</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!-- Boosrtap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800&family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- Icono de la página -->
+    <link rel="shortcut icon" href="img/iconoE&E.png" type="image/x-icon">
+
 </head>
 
-<body class="contenedorInicio">
-    <header class="headerInicio">
-        <img class="logo" src="img/logoeye.jpg" alt="Foto del logo de la empresa">
-        <nav>
-            <ul class="navLink">
-                <li class="navegador"> <a href="index.html">Inicio</a></li>
-                <li class="navegador"> <a href="html/historia.html">Nuestra historia</a></li>
-                <li class="navegador"> <a href="html/flota.html">Flota de camiones</a></li>
+<body>
+    <!-- Header -->
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary color">
+                <div class="container-fluid color">
+                    <a class="navbar-brand bt" href="index.html">
+                        <img class="logo" src="img/logoeye.jpg" alt="Foto del logo de la empresa">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse color" id="navbarNav">
+                        <ul class="navbar-nav ul">
+                            <li class="nav-item li">
+                                <a class="nav-link e" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item li">
+                                <a class="nav-link e" href="html/historia.html">Nuestra historia</a>
+                            </li>
+                            <li class="nav-item li">
+                                <a class="nav-link e" href="html/flota.html">Nuestra flota</a>
+                            </li>
+                            <li class="nav-item li">
+                                <a class="nav-link e" href="html/form.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-            </ul>
-        </nav>
-    </header>
-    <main class="mainInicio">
-        <h1 class="head"> E&E TRANSPORTES </h1>
-    </main>
+        <!-- Main -->
+        <main class="wrapeer padre">
+            <h1 class="titulo animacion">E&E TRANSPORTES</h1>
+            <div class="fotoInicio"> <img src="img/camion.jpg" alt="Foto de camión" class="fotocamion img-fluid"></div>
+            <p class="intro">Somos una jóven empresa en búsqueda de brindar a nuestros clientes servicios de logística
+                con calidad,
+                eficiencia y responsabilidad. Nuestro ámbito de cobertura es en todo el ámbito de la República
+                Argentina, y el centro de organización en
+                Tornquist.</p>
 
-    <section class="formInicio">
-        <br><br>
-        <p>Somos una jóven empresa en búsqueda de brindar a nuestros clientes servicios de logística con calidad,
-            eficiencia y responsabilidad. <br>
-            El ámbito de cobertura es en todo el ámbito de la República Argentina, con centro de organización en
-            Tornquist.</p>
-        <h2>Contacto</h2>
-        <p class="form">Envianos tu consulta para que podamos resolver todas tus inquietudes o pedí tu cotización:</p>
-        <div class="container">
-            <form class="padre">
-                <input type="text" placeholder="Nombre" class="boton hijo1">
-                <input type="text" placeholder="Apellido" class="boton hijo2"> <br>
-                <input type="text" placeholder="Correo electrónico" class="boton hijo3"> <br>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Déjanos tu consulta"
-                    class="boton hijo4"></textarea>
-            </form>
-        </div>
-        <br><br>
-    </section>
-    <footer class="pieInicio">
-        E&E TRANSPORTES SRL
-        <br>
-        EUGENIO JANYISTABRO (SOCIO GERENTE) - EDUARDO RUBEN GONZALEZ (SOCIO) <br>
-        0291-4941308 / 0291-4941267 CEL. 0291-4131080, EUGENIO JANYISTABRO. <br>
-        TORNQUIST. PCIA. DE BUENOS AIRES
-    </footer>
+            <!-- pie info E&E -->
+            <section class="info">
+                <p> EUGENIO JANYISTABRO (SOCIO GERENTE) - EDUARDO RUBEN GONZALEZ (SOCIO) <br>
+                    0291-4941308 / 0291-4941267 CEL. 0291-4131080, EUGENIO JANYISTABRO.</p>
+            </section>
+
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p> Página creada por Jazlieta, todos los derechos reservados </p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>

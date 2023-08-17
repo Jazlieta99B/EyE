@@ -1,0 +1,44 @@
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .formulario {
+            background-color: rgb(211, 225, 229);
+            border: 3px #598795 solid;
+            text-align: center;
+            align-self: center;
+            border-radius: 10px;
+            width: 40%;
+            padding: 2% 2%;
+            overflow: auto;
+
+            .boton {
+                background-color: whitesmoke;
+                border: 2px solid #598795;
+                border-radius: 10px;
+                margin: 1% 1%;
+
+                &:hover {
+                    background-color: #cde5ec;
+                }
+            }
+
+            .correo,
+            .consulta {
+                width: 80%;
+            }
+
+            .botonEnviar {
+                background-color: #598795;
+                border: none;
+                justify-self: center;
+                width: 30%;
+                color: white;
+
+                &:hover {
+                    background-color: #40626d;
+                }
+            }
+        }
+    }

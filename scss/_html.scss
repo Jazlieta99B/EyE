@@ -1,0 +1,71 @@
+.padre {
+    display: grid;
+    grid-template-areas: "titulo titulo"
+        "intro fotoInicio"
+        "pie pie";
+
+    .intro {
+        color: rgb(89, 135, 149);
+        font-size: 1.4rem;
+        text-align: center;
+        grid-area: intro;
+        width: 40%;
+        margin: 10% 15%;
+    }
+
+    .fotoInicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1% 1%;
+        grid-area: fotoInicio;
+
+        .fotocamion {
+            width: 40rem;
+            height: 30rem;
+        }
+    }
+
+    .info {
+        grid-area: pie;
+    }
+
+    .titulo {
+        grid-area: titulo;
+    }
+}
+
+/*Versión tablet*/
+@media (min-width:500px) and (max-width: 900px) {
+    .padre {
+        grid-template-areas: "titulo titulo" "intro intro" "fotoInicio fotoInicio" "pie pie";
+    }
+
+    .intro {
+        width: 100%;
+        margin: 5% 5%;
+    }
+
+    .fotocamion {
+        width: 50rem;
+        height: 40rem;
+    }
+}
+
+/*Versión celu*/
+@media (max-width: 500px) {
+    .padre {
+        grid-template-areas: "titulo" "intro" "fotoInicio" "pie";
+    }
+
+    .intro {
+        width: 100%;
+        margin: 5% 5%;
+    }
+
+    .fotocamion {
+        width: 50rem;
+        height: 40rem;
+    }
+}
